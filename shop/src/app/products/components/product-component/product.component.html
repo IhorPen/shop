@@ -1,0 +1,12 @@
+<form class="form">
+  <ul>
+    <li>Name: {{name}}</li>
+    <li>Description: {{description}}</li>
+    <li>Price: {{price}}</li>
+    <li>Category: {{category}}</li>
+    <li>tags: <span *ngFor="let tag of tags; let idx = index">{{tag}}{{idx < tags.length-1 ? ", " : ""}}</span></li>
+    <div class="notAvailable" *ngIf="!isAvailable">Not Available</div>
+  </ul>
+
+  <button class="btn btn-primary buyButton" (click)="onBuy($event)" [disabled]="!isAvailable">Buy</button>
+</form>
