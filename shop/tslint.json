@@ -40,6 +40,7 @@
       "timeEnd",
       "trace"
     ],
+    "no-construct": true,
     "no-empty": false,
     "no-inferrable-types": [
       true,
@@ -61,6 +62,7 @@
       "single"
     ],
     "trailing-comma": false,
+    "no-trailing-whitespace": false,
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,

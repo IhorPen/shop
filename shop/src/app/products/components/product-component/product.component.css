@@ -1,0 +1,12 @@
+.buyButton {
+  margin-left: 40px;
+}
+
+.notAvailable {
+  padding-top: 10px;
+  color: brown;
+}
+
+.form {
+  max-width: 500px;
+}

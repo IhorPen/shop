@@ -1,0 +1,14 @@
+<p>
+  Cart:
+</p>
+<div *ngIf="cartService.getCartItems().length < 1">
+  The cart is empty
+</div>
+<div *ngIf="cartService.getCartItems().length > 0">
+  <div class="container-fluid" *ngFor="let cartItem of cartService.getCartItems()">
+    <div class="row">
+      <div class="col-md-10">{{cartItem.product.name}}</div>
+      <div class="col-md-2">{{cartItem.quantity}}</div>
+    </div>
+  </div>
+</div>
